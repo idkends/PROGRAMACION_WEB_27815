@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Tutorias
+    </title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>
+            Tutorias
+        </h1>
+    </header>
+
+    <!-- Cuerpo -->
+    <main>
+
+        
+        <!-- ul>(li{Uva}>ul[type="circle"]>(li{Verde}>ul>li{Claro}+li{Caducado})+li{Roja})+li{Pera}+li{Manzana}-->
+        <!-- ul>(li{Uva}>ul[type="circle"]>(li{Verde}>ul>li{Claro}+li{Obscuro})+li{Naranja}>(ul>[type=square]>li{Bajo}>li{Mediano}>li{Alto})>+li{Pera}+li{Manzana}-->
+        <ul type="square">
+            <li>UVA
+                <ul type="circle">
+                    <li>VERDE
+                        <ul type="disc">
+                            <li>CLARO</li>
+                            <li>OBSCURO</li>
+                        </ul>
+                    </li>
+                    <li>NARANJA
+                        <ul type="square">
+                            <li>ALTO</li>
+                            <li>MEDIO</li>
+                            <li>BAJO</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>PERA</li>
+            <li>MANZANA</li>
+        </ul>
+<hr>
+
+        <!-- Lista no ordenada -->
+        <ul type="square">
+            <li value="a.1">Uva</li>
+                <ul>
+                    <li>Verde</li>
+                        <ul>
+                            <li>Claro</li>
+                            <li>Caducado</li>
+                        </ul>
+                    <li>Roja</li>
+                </ul>
+            <li value="a.2">Pera</li>
+            <li value="a.3">Manzana</li>
+        </ul>
+
+        <!-- Lista ordenada -->
+        <ol type="i">
+            <li>Uva</li>
+                <ol type="A">
+                    <li>Verde</li>
+                        <ul type="none">
+                            <li>1.1 Claro</li>
+                            <li>1.2 Caducado</li>
+                        </ul>
+                    <li>Roja</li>
+                </ol>
+            <li>Pera</li>
+            <li>Manzana</li>
+        </ol>
+    </main>
+
+    <!-- Pie de pag -->
+    <footer>
+
+    </footer>
+</body>
+</html>

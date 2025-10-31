@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+</head>
+<body>
+    <header>
+        <h1>FACTURA</h1>
+    </header>
+    <main>
+        <!-- Datos superiores -->
+        <table border="1">
+            <tr>
+                <td>
+                    <b>FARMACIA</b><br>
+                    SANA SANA<br>
+                    RUC 12211923G<br>
+                    19 DE MAYO, n°3<br>
+                    47014 ESMERALDA<br>
+                    <br>
+                    Factura número: 442
+                </td>
+                <td>
+                    <b>Asociación de Farmacias de la Republica del Ecuador</b><br>
+                    en Quevedo “VALENCIA”<br>
+                    CIF: G64890015<br>
+                    Gran Vía Carles III, n° 46<br>
+                    08028 Barcelona<br>
+                    <br>
+                    Fecha factura:
+                        <label for="fechafac"></label>
+                <input
+                type="date" 
+                name="fechafac" 
+                id="fechafac"
+                value="2025-10-22"
+                min="2025-10-01"
+                max="2025-10-31"
+                required
+            >
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Tabla de producto -->
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>PVPiva</th>
+                <th>% Dto.</th>
+                <th>Precio neto</th>
+                <th>Unidades</th>
+                <th>Importe</th>
+                <th>Tipo IVA</th>
+            </tr>
+            <tr>
+                <td>PERMECURE 5% crema 70 gramos</td>
+                <td>17,03</td>
+                <td>20%</td>
+                <td>13,62</td>
+                <td>60</td>
+                <td>817,20</td>
+                <td>4%</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Total -->
+        <h3>TOTAL FACTURA: 27,5 Dolares</h3>
+
+        <!-- Resumen IVA -->
+        <table border="1">
+            <tr>
+                <th>Base Imponible</th>
+                <th>%IVA</th>
+                <th>Cuota</th>
+            </tr>
+            <tr>
+                <td>20,3</td>
+                <td>15</td>
+                <td>27,5</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Forma de pago -->
+        <p><b>Forma de pago:</b> Transferencia a nuestra cuenta de <b>Banco del Pacifico</b>, oficina de la calle 19 de Mayo, de La Maná.</p>
+        <p><b>ID de compra:</b> 2096-0118-50-2298095800</p>
+    </main>
+
+    <footer>
+        <p>Gracias por su compra.</p>
+    </footer>
+</body>
+</html>

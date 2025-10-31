@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Ingresar datos del estudainte</h1>
+    </header>
+    <main>
+        <form action="server.html" method="post">
+            <!-- TEXT -->
+             <label for="nombres">Ingrese sus nombres: </label>
+                <input
+                type="text" 
+                name="nombres" 
+                id="nombres"
+                placeholder="Kenned Jhair"
+                autofocus
+                maxlength="20"
+                minlength="2"
+                required
+                >
+
+        <br>
+
+             <label for="apellidos">Ingrese sus apellidos: </label>
+                <input
+                type="text" 
+                name="apellidos" 
+                id="apellidos"
+                placeholder="Sigcha Palma"
+                autofocus
+                maxlength="20"
+                minlength="2"
+                required
+                >
+            <!-- Email -->
+        <br>
+
+             <label for="email">Ingrese su email: </label>
+                <input
+                type="email" 
+                name="email" 
+                id="email"
+                placeholder="kjsigcha@espe.edu.ec"
+                autofocus
+                maxlength="20"
+                minlength="5"
+                required
+                >
+        
+        <br>
+            
+            <!-- Email -->
+            <label for="edad">Ingrese su edad: </label>
+                <input
+                type="number" 
+                name="edad" 
+                id="edad"
+                placeholder="20"
+                autofocus
+                max="50"
+                min="18"
+                required
+            >
+        
+        <br>
+            
+            <!-- Email -->
+            <label for="fecha_nac">Ingrese su fecha de nacimiento: </label>
+                <input
+                type="date" 
+                name="fecha_nac" 
+                id="fecha_nac"
+                value="2025-10-22"
+                min="2025-10-01"
+                max="2025-10-31"
+                required
+            >
+
+        <br>
+            
+            <!-- Radio -->
+             <label>Ingrese su sexo:</label>
+            <label for="hombre">Hombre</label>
+                <input 
+                type="radio"
+                name="sexo"
+                id="hombre"
+                value="hombre"
+                checked
+                >
+
+            <label for="mujer">Mujer</label>
+                <input 
+                type="radio"
+                name="sexo"
+                id="mujer"
+                value="mujer"
+                >
+
+        <br>
+            <label>Ingrese los dias de clases de EDO</label>
+            <br>
+            <label for="lunes">Lunes</label>
+            <input 
+            type="checkbox" 
+            name="dia[]"
+            id="lunes"
+            value="lunes"
+            >
+        <br>
+            <label for="martes">Martes</label>
+            <input 
+            type="checkbox" 
+            name="dia[]"
+            id="martes"
+            value="martes"
+            >
+        <br>
+            <label for="miercoles">Miercoles</label>
+            <input 
+            type="checkbox" 
+            name="dia[]"
+            id="miercoles"
+            value="miercoles"
+            >
+        <br>
+            <label for="jueves">Jueves</label>
+            <input 
+            type="checkbox" 
+            name="dia[]"
+            id="jueves"
+            value="jueves"
+            >
+        <br>
+            <label for="viernes">Viernes</label>
+            <input 
+            type="checkbox" 
+            name="dia[]"
+            id="viernes"
+            value="viernes"
+            checked
+            >
+
+        <br>
+        <!-- FIle -->
+            <label for="foto">Cargue su foto de perfil </label>
+        <br>
+            <input  
+                type="file"
+                name="foto"
+                id="foto"
+                accept=".png .jpg"
+            >
+
+        <br>
+        <!-- COLOR -->
+            <label for="color">Ingrese su color favorito: </label>
+            <input
+            type="color"
+            name="color"
+            id="color"
+            >
+        
+        <br>
+        <!-- range -->
+            <label for="rango">Ingrese su estatura: </label>
+            <input
+            type="range"
+            name="rango"
+            id="rango"
+            value="20"
+            max="50"
+            >
+
+        <br>
+        <!-- search -->
+            <label for="cedula">Ingrese su cedula: </label>
+            <input
+            type="search"
+            name="cedula"
+            id="cedula"
+            >
+        <br>
+        <label>Contrasenia: </label>
+        <input
+        type="password"
+        name="contrasenia"
+        id="contrasenia"
+        >
+        
+        <br>
+        <!-- Reset -->
+         <input 
+         type="reset"
+         name="limpiar"
+         id="limpiar"
+         value="LIMPIAR"
+         >
+
+         <input
+         type="submit"
+         name="enviar"
+         id="enviar"
+         value="Enviar formulario"
+         >
+        </form>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
