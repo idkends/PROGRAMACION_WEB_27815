@@ -1,0 +1,14 @@
+.btn-uno{
+    background-color: green;
+    color: white;
+    border: 1px solid greenyellow;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+}
+
+.btn-uno:hover{
+    background-color: darkgreen;
+    border-color: yellowgreen;
+    cursor: pointer;
+}
