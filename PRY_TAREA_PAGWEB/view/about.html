@@ -1,0 +1,180 @@
+<!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Biografía breve</h2>
+                        <p class="text-white-50">
+                            Lionel Messi, nacido en Rosario (Argentina), es un futbolista profesional reconocido por su talento, visión y capacidad goleadora.
+                            A lo largo de su carrera ha ganado múltiples Balones de Oro, títulos de liga y competencias internacionales con clubes y la selección.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="./public/img/Messi1.jpg" alt="Lionel Messi" />
+            </div>
+        </section>
+        <!-- Multimedia, Formularios, Tablas y Componentes adicionales -->
+        <section id="multimedia" class="py-5">
+            <div class="container">
+                <h3 class="mb-4">Multimedia</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <figure>
+                            <img src="./public/img/MessiCabeza.jpg" class="img-fluid" alt="Messi retrato" />
+                            <figcaption class="small text-muted">Retrato de Messi (archivo local).</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <video controls width="100%" poster="./public/img/Messi6.jpg" aria-label="Video de ejemplo">
+                            <source src="./public/videos/Messivideo.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento <code>video</code>.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fullform" class="py-5 bg-light">
+            <div class="container">
+                <h3 class="mb-4">Formulario completo (validación HTML5)</h3>
+                <form class="row g-3" action="#" method="post">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required maxlength="100">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Mínimo 8 caracteres" required pattern=".{8,}" title="Mínimo 8 caracteres">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="age" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="age" name="age" min="10" max="120" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="position" class="form-label">Posición preferida</label>
+                        <select id="position" name="position" class="form-select" required>
+                            <option value="">Elige...</option>
+                            <option>Delantero</option>
+                            <option>Centrocampista</option>
+                            <option>Defensa</option>
+                            <option>Portero</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" maxlength="500" placeholder="Tu mensaje (máx. 500 caracteres)"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terms" required>
+                            <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar formulario</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="tables-lists" class="py-5">
+            <div class="container">
+                <h3 class="mb-4">Tabla y listas</h3>
+                <div class="table-responsive mb-4">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Temporada</th>
+                                <th>Club</th>
+                                <th>Goles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2008/09</td>
+                                <td>Barcelona</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>2011/12</td>
+                                <td>Barcelona</td>
+                                <td>73</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Total (ejemplo)</td>
+                                <td>111</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Lista ordenada</h5>
+                        <ol>
+                            <li>Primer logro
+                                <ol>
+                                    <li>Mundial Sub-20 de 2005</li>
+                                    <li>Liga con el FC Barcelona en la temporada 2004-05</li>
+                                </ol>
+                            </li>
+                            <li>Balones de Oro</li>
+                                <ol>
+                                    <li>2009</li>
+                                    <li>2010</li>
+                                    <li>2011</li>
+                                    <li>2012</li>
+                                    <li>2015</li>
+                                    <li>2019</li>
+                                    <li>2021</li>
+                                    <li>2023</li>
+                                </ol>
+                        </ol>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Lista no ordenada</h5>
+                        <ul>
+                            <li>Golazos
+                                <ul>
+                                    <li>2007: Contra el Getafe (Copa del Rey), es considerado uno de sus goles más icónicos por ser una réplica del gol de Diego Maradona.</li>
+                                    <li>2009: Contra el Manchester United (Final de la Champions League), fue el gol de cabeza que Messi consideró su favorito.</li>
+                                </ul>
+                            </li>
+                            <li>Asistencias</li>
+                                <ul>
+                                    <li>2021: 34 asistencias en partidos oficiales (2021), logradas con el PSG y el Barcelona.</li>
+                                    <li>2019: 31 asistencias en 2019, logradas con el PSG.</li>
+                                </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal trigger -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#infoModal">Abrir información</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="infoModalLabel">Más sobre Messi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                                Messi es considerado el mejor futbolista de todos los tiempos por su habilidad, visión y récords impresionantes tanto a nivel de clubes como internacional.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
