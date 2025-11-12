@@ -1,0 +1,31 @@
+.form-control:required:invalid,
+input[type="radio"][required]:invalid {
+  border: 2px solid #dc3545 !important;
+  outline: none;
+}
+.form-control:required:valid {
+  border: 2px solid #198754 !important;
+}
+
+.hint-invalid { 
+  display: none; 
+  color: #f8d7da;
+  font-size: .9rem;
+  margin-top: .25rem;
+}
+.form-control:invalid + .hint-invalid {
+  display: block;
+}
+
+.radios .radio-error { 
+  display: none; 
+  color: #f8d7da; 
+  font-size: .9rem; 
+  margin-top: .25rem;
+}
+.radios input[type="radio"][required]:invalid ~ .radio-error { 
+  display: block; 
+}
+.radios input[type="radio"][required]:valid ~ .radio-error { 
+  display: none; 
+}
